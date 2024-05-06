@@ -1,232 +1,409 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
-  *{
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+       *{
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    
   }
-    .header{
-    min-height: 50vh;
-    width:100%;
-    
-    background-image: url(./hero.jpg );
-    background-position: center;
-    background-repeat:repeat;
-    background-size: cover;
-    position:relative; 
-
-        
-    }
-    
-
-    
-    
-    .nav-links ul{
-        width: 85%;
-        margin: auto;
-        display: flex;
-        padding: 2px 10px;
-        justify-content:right;
-        justify-content:space-between;
-        list-style: none;
-        align-items: center;
-        
-
-    }
-    .nav-links ul li{
-list-style: none;
-display: inline-block;
-margin: 0,20px;
-    }
-     .nav-links ul li a{
-        text-decoration: none;
-        color:chartreuse;
-        text-transform: uppercase;
-        transform: 5s;
+      #nav{
+          display: flex;
+          justify-content: space-between;
          
-         position: relative;
-     }
-    
-       
-       
-     
-     .nav-links ul li a:hover{
-        text-decoration: underline;
-
-     }
-     .latest{
-        display: grid;
-     
-        
-            grid-template-columns: 20% 20% 20% 20%  ;
-            grid-template-rows: 25% 25% 25% 25%;
-            gap:2px;
-            justify-content:center;
-            position:relative;
-            
-
-            
-     }
-    
-   .row1{
-display:flex;
-width: 100px;
-justify-content: space-between;
-gap: 2px;
-
-
-
-
+      }
+      #nav1{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 50%;
+         
+      }
+      a{
+          text-decoration: none;
+          color: black;
+      }
+      .a{
+   object-fit: cover; 
+   height: 400px;
+    width: 100%;
     }
-    .row2{
-        display: flex;
-        gap: 15px;
-        grid-column: 1/4;
-        
+    .high{
+  display: flex;
+  justify-content: space-between;
+  }
+  #row1{
+      display: flex;
+      column-gap: 10px;
+  }
+  .para1{
+          display: flex;
+          justify-content: space-between;
+      }
+      #row2,#row3,#row4{
+      display: flex;
+      column-gap: 10px;
+  }
+  .para2,.para3,.para4{
+          display: flex;
+          justify-content: space-between;
+      }
+  #row1,#row2{
+  row-gap: 10px;
+  margin-top: 40px;
+ }
+ #row3,#row4{
+  row-gap: 10px;
+  margin-top: 40px;
+ } 
+ .smile1{
+      display: flex;
+      flex-direction: row;
+      margin-top: 50px;
+  justify-content:space-around;
+  
     }
-    .row3{
-        display: flex;
-        gap: 5px;
-        grid-column: 1/4;
-        
-    }
-    .row4{
-        display: flex;
-        gap: 5px;
-        grid-column: 1/4;
-    }
-    
-    
-    p +p{
-        display: inline;
-        float: right;
+    #footer{
+      display: flex;
+      flex-direction: row;
+      
+      background-color:  #d3d3d3;
+      
+      width:100%;
+      height:100%; 
+      border: 2px solid black;
+      justify-content: center;
+      gap: 30px;
+      align-items: center;
     }
    
-    
 
-   
     
-</style>
+  .footer1{
+    width: 100%;
+    height: 100%;
+    
+  }
+  .parent1{
+    display: flex;
+    flex-direction: row;
+  }
+  #space{
+    margin: 30px;
+    padding: 30px 30px;
+  }
+    .fotter{
+        
+        display: flex;
+        margin-bottom: 30px;
+        justify-content: space-between;
+        gap: 10px;
+         }
+         .process{
+        background-color:aqua;
+        width: 25%;
+        height: 25%;
+        text-align: center;
+        color:azure;
+        border: 2px solid black;
+
+    }
+    .nextpage{
+      background-color:aqua;
+        width: 25%;
+        height: 25%;
+        text-align: center;
+        color:azure;
+        border: 2px solid black;
+
+    }
+    .numbers{
+      display: flex;
+      gap: 10px;
+    }
+    .numbers button:hover{
+      background-color: aqua;
+    }
+  
+
+      @media screen and  (min-width:100px) and (max-width:900px){
+          #nav{
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+    }
+    #nav1{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+    #nav1 a{
+      width: 100%;
+      text-align: center;
+    }
+    #img{
+     justify-content: center;
+     margin-left: 70px;
+    }  
+    .a{
+      width: 100%;
+    }
+    #row1{
+      display: flex;
+      flex-direction: column;
+    }
+    #im1{
+      width: 100%;
+    }
+    #footer{
+      display: flex;
+      flex-direction: column;
+      padding: 10px 10px;
+    }
+    #search{
+      position: relative;
+      right: 450px;
+      bottom: 50px;
+     
+    }
+    #space{
+      display: flex;
+      flex-direction:column;
+      padding: 30px 30px;
+      
+    }
+    .parent1{
+      padding: 20px 20px;
+    }
+    .smile1{
+      display:flex;
+      flex-direction: column;
+      
+    }
+    .smile2{
+      padding: 50px;
+    }
+    .smile3{
+      padding: 50px;
+    }
+    .smile4{
+      padding:auto;
+    }
+  
+}
+  </style>
+</head>
 <body>
-    <section class="header">
-    <nav>
-      <div class="nav-links">
-        <ul>
-            <li><a href="#">Photos</a></li>
-            <li><a href="#">Vedios</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>   
-        </ul>
-         </div>
-      </nav> 
-    </section>
-    <div class="latest">
-      
-     
-          <div class="row1">
-          <div><img src="./img-01.jpg" alt="">
-          <p f16,008 views 24 sep 2020 </p>
-          <!-- <p class="flot">16,008 views</p>
-           -->
-  
-        </div>
-        <div>
-          <img src="img-02.jpg" alt="">
-          <p>24 sep 2020 </p>
-          <p class="flot">16,008 views</p>
-          
-        </div>
-        <div>
-          <img src="img-03.jpg" alt="">
-          <p>24 sep 2020 </p>
-          <p class="flot">16,008 views</p>
-          
-        </div>
-        <div>
-          <img src="img-04.jpg" alt="">
-          <p>24 sep 2020 </p>
-          <p class="flot">16,008 views</p>
-          
-        </div></div>
-  
-         <div class="row2">
-          <div>
-          <img src="img-05.jpg" alt="">
-          <p>24 sep 2020 </p>
-          <p class="flot">16,008 views</p>
-          
-        </div>
-        <div>
-          <img src="img-06.jpg" alt="">
-          <p>24 sep 2020 </p>
-          <p class="flot">16,008 views</p>
-          
-        </div>
-        <div><img src="img-07.jpg" alt="">
-          <p>24 sep 2020 </p>
-          <p class="flot">16,008 views</p>
-          </div>
-        <div><img src="img-08.jpg" alt="">
-          <p>24 sep 2020 </p>
-          <p class="flot">16,008 views</p>
-          </div>
-        </div>
-  
-        <div class="row3">
-  
-         <div><img src="img-09.jpg" alt="">
-          <p>24 sep 2020 </p>
-          <p class="flot">16,008 views</p>
-          </div>
-        <div><img src="img-11.jpg" alt="">
-          <p class="flot">24 sep 2020 </p>
-          <p>16,008 views</p>
-          </div>
-        <div><img src="img-12.jpg" alt="">
-          <p>24 sep 2020 </p>
-          <p class="flot">16,008 views</p>
-          </div>
-        <div><img src="img-13.jpg" alt="">
-          <p>24 sep 2020 </p>
-          <p class="flot">16,008 views</p>
-          </div>
-      </div>
-      <div class="row4">
-        <div>
-          <img src="img-14.jpg" alt="">
-          <p>24 sep 2020 </p>
-          <p class="flot">16,008 views</p>
-          
-      </div>
-        <div>
-          <img src="img-15.jpg" alt="">
-          <p>24 sep 2020 </p>
-          <p class="flot">16,008 views</p>
-          
-      </div>
-       
-        <div>
-          <img src="img-16.jpg" alt="">
-          <p>24 sep 2020 </p>
-          <p class="flot">16,008 views</p>
-          
-      </div> 
-        <div>
-          <img src="img-16.jpg" alt="">
-          <p>24 sep 2020 </p>
-          <p class="flot">16,008 views</p>
-          
-      </div>
-   </div>
-      </div>
-      </div>
-      
  
-</body>
-</html>
+  
+  <div id="nav" style="padding-top: 20px;">
+      <div id="img">CATALOG-Z</div>
+      <div id="nav1">
+      <a href="#"><span style="background-color: red;">PHOTOS</span></a>
+      <a href="#">VIDEOS</a>
+      <a href="#">ABOUT</a>
+      <a href="#">CONTACT</a>
+    </div>
+  </div>
+  <div class="a">
+      <img src="./hero.jpg" alt="" height="400px" width="100%">
+      <div id="search">
+      <button style="position: relative; left:600px ; bottom:200px ; padding-right:80px">search</button>
+      <i class="fa-solid fa-magnifying-glass" style="position: relative; left:600px; bottom:200px; background-color:white;"></i>
+      </div>
+      
+          
+          
+   </div>
+  
+  <div>
+  <div class="high">
+   <h3>latest vedios</h3>
+   <h3>steps</h3>
+   </div>
+   <div id="space">
+   <div id="row1">
+      <div>
+      <img id="im1" src="./img-01.jpg" width="100%" height="100%">
+      <div class="para1">
+          <p>24 oct 2020<br>
+          10,460</p>
+      </div>
+  </div>
+  <div>
+      <img id="im1" src="./img-02.jpg" width="100%" height="100%">
+      <div class="para1">
+          <p>24 oct 2020<br>
+          10,460</p>
+          </div>
+  </div>
+  <div>
+      <img id="im1" src="./img-03.jpg" width="100%" height="100%">
+      <div class="para1">
+          <p>24 oct 2020<br>
+          10,460</p>
+          </div>
+      </div>
+  <div>
+      <img id="im1" src="./img-04.jpg" width="100%" height="100%">
+      <div class="para1">
+          <p>24 oct 2020<br>
+          10,460</p>
+          </div>
+  </div>
+
+  </div>
+  <div id="row1">
+      <div>
+      <img id="im1" src="./img-05.jpg" width="100%" height="100%">
+      <div class="para2">
+          <p>24 oct 2020<br>
+          10,460</p>
+      </div>
+  </div>
+  <div>
+      <img id="im1" src="./img-06.jpg" width="100%" height="100%">
+      <div class="para2">
+          <p>24 oct 2020<br>
+          10,460</p>
+          </div>
+  </div>
+  <div>
+      <img id="im1" src="./img-07.jpg" width="100%" height="100%">
+      <div class="para2">
+          <p>24 oct 2020<br>
+          10,460</p>
+          </div>
+      </div>
+  <div>
+      <img id="im1" src="./img-08.jpg" width="100%" height="100%">
+      <div class="para2">
+          <p>24 oct 2020<br>
+          10,460</p>
+          </div>
+  </div>
+
+  </div>
+  <div id="row1">
+      <div>
+      <img id="im1" src="./img-09.jpg" width="100%" height="100%">
+      <div class="para2">
+          <p>24 oct 2020<br>
+          10,460</p>
+      </div>
+  </div>
+  <div>
+      <img id="im1" src="./img-10.jpg" width="100%" height="100%">
+      <div class="para2">
+          <p>24 oct 2020<br>
+          10,460</p>
+          </div>
+  </div>
+  <div>
+      <img id="im1" src="./img-11.jpg" width="100%" height="100%">
+      <div class="para2">
+          <p>24 oct 2020<br>
+          10,460</p>
+          </div>
+      </div>
+  <div>
+      <img id="im1" src="./img-12.jpg" width="100%" height="100%">
+      <div class="para2">
+          <p>24 oct 2020<br>
+          10,460</p>
+          </div>
+  </div>
+  </div>
+  <div id="row1">
+      <div>
+      <img id="im1" src="./img-13.jpg" width="100%" height="100%">
+      <div class="para2">
+          <p>24 oct 2020<br>
+          10,460</p>
+      </div>
+  </div>
+  <div>
+      <img id="im1" src="./img-14.jpg" width="100%" height="100%">
+      <div class="para2">
+          <p>24 oct 2020<br>
+          10,460</p>
+          </div>
+  </div>
+  <div>
+      <img id="im1" src="./img-15.jpg" width="100%" height="100%">
+      <div class="para2">
+          <p>24 oct 2020<br>
+          10,460</p>
+          </div>
+      </div>
+  <div>
+      <img id="im1" src="./img-16.jpg" width="100%" height="100%">
+      <div class="para2">
+          <p>24 oct 2020<br>
+          10,460</p>
+          </div>
+  </div>
+
+  </div>
+  </div>
+  <!-- <div class="smile1">
+      <div class="smile2" style="background-color: aqua;" >pervious</div>
+      
+      <div class="smile3">
+          <button style="background-color: aqua;">1</button>
+      <button>2 </button>
+      <button>3 </button>
+      <button>4 </button> </div>
+      <div class="smile4"><button style="background-color: aqua;">next page</button></div><br><br>
+      </div> -->
+      <div class="fotter">
+
+        <div class="process">process</div>
+
+        <div class="numbers">
+        <div class="items"><button>1</button></div>
+        <div class="items"><button>2</button></div>
+        <div class="items"><button>3</button></div>
+        <div class="items"><button>4</button></div>
+        <div class="items"><button>5</button></div>
+        </div>
+
+        <div class="nextpage">next page</div>
+
+        </div>
+      <div class="parent1">
+      <div id="footer">
+          
+        <div class="footer1">
+     
+     <h3>ABOUT CATALOG-Z</h3><br>
+     <p>catalog-z is free bootstrap 5 alpha 2 html<br> template for video and photo website you can<br>freely use this template layout for a frnoy-end<br></p><br>
+     <p>copyright 2020 catalog-z company all right reserved</p>
+          </div>
+ 
+       <div class="footer1">
+     <h1>our links</h1>
+    <p>adverstise</p><br>
+    <p>support</p><br>
+    <p>our company</p><br>
+    <p>contact</p><br>
+        </div>
+       <div class="footer1">
+         <button i="" class="fa-brands fa-facebook-f"></button>
+         <button i="" class="fa-brands fa-twitter"></button>
+         <button i="" class="fa-brands fa-instagram"></button>
+         <button i="" class="fa-brands fa-linkedin"></button><p>terms of use</p><br>
+          <p>privacy policy</p>
+
+       </div>
+  </div>
+      </div>
+
+
+
+</div></body></html>
